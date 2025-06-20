@@ -3,8 +3,6 @@ package com.cibertec.cibertecapp.playstore
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.cibertec.cibertecapp.news.Noticia
-import com.cibertec.cibertecapp.news.NoticiasViewHolder
 
 class AppAdapter(val listaApp: List<App>):
     RecyclerView.Adapter<AppViewHolder>() {

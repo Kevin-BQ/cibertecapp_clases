@@ -8,9 +8,9 @@
         android:title="Apps" />
 
     <item
-        android:id="@+id/noticias"
+        android:id="@+id/nba"
         android:icon="@drawable/baseline_newspaper_24"
-        android:title="Noticias" />
+        android:title="NBA" />
 
     <item
         android:id="@+id/cursos"

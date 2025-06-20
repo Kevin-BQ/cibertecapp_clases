@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.cibertec.cibertecapp.NBA.NbaActivity
 import com.cibertec.cibertecapp.cursos.CursosActivity
 import com.cibertec.cibertecapp.news.NoticiasActivity
 import com.cibertec.cibertecapp.playstore.AppActivity
@@ -32,8 +33,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.cursos -> {
                     fragment(CursosActivity())
                 }
-                R.id.noticias -> {
-                    startActivity(Intent(this, NoticiasActivity::class.java))
+                R.id.nba -> {
+                    fragment(NbaActivity())
                 }
             }
             true
