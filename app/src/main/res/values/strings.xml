@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CibertecApp</string>
+    <string name="text_name">Nombre</string>
+    <string name="text_lastname">Apellido</string>
+    <string name="text_email">Correo</string>
+    <string name="text_pws">Contraseña</string>
+    <string name="text_rpws">Repetir Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_register">Registrar</string>
+
+
+    // Bembos
+
+    <string name="txt_recuperar">Recuperar Contraseña</string>
+    <string name="txt_redes">Ingresar con Redes Sociales</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+    <string name="txt_product">Productos</string>
+    <string name="btn_burguer">Hamburguesa</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="txt_details">sdahdgfsdfdfvdsfgdfhgdfgjashdashdashdajhdashdahdabasdjahsdasdakjhdashd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

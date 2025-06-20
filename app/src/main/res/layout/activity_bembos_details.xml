@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/txt_product"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPlato"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/plato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_products" />
+
+    <ImageView
+        android:id="@+id/imgFav"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/favorito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato" />
+
+    <TextView
+        android:id="@+id/txt_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/btn_burguer"
+        app:layout_constraintStart_toEndOf="@id/imgPlato"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato" />
+
+    <TextView
+        android:id="@+id/txt_details"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/txt_details"
+        app:layout_constraintStart_toEndOf="@id/imgPlato"
+        app:layout_constraintTop_toBottomOf="@id/txt_burger" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btn_agregar"
+        app:layout_constraintTop_toBottomOf="@id/imgPlato" />
+
+    <ImageView
+        android:id="@+id/imgPlato2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/plato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add" />
+
+    <ImageView
+        android:id="@+id/imgFav2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/favorito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato2" />
+
+    <TextView
+        android:id="@+id/txt_burger2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/btn_burguer"
+        app:layout_constraintStart_toEndOf="@id/imgPlato2"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato2" />
+
+    <TextView
+        android:id="@+id/txt_details2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/txt_details"
+        app:layout_constraintStart_toEndOf="@id/imgPlato2"
+        app:layout_constraintTop_toBottomOf="@id/txt_burger2" />
+
+    <Button
+        android:id="@+id/btn_add2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btn_agregar"
+        app:layout_constraintTop_toBottomOf="@id/imgPlato2" />
+
+    <ImageView
+        android:id="@+id/imgPlato3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/plato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add2" />
+
+    <ImageView
+        android:id="@+id/imgFav3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/favorito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato3" />
+
+    <TextView
+        android:id="@+id/txt_burger3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/btn_burguer"
+        app:layout_constraintStart_toEndOf="@id/imgPlato3"
+        app:layout_constraintTop_toTopOf="@+id/imgPlato3" />
+
+    <TextView
+        android:id="@+id/txt_details3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="@string/txt_details"
+        app:layout_constraintStart_toEndOf="@id/imgPlato3"
+        app:layout_constraintTop_toBottomOf="@id/txt_burger3" />
+
+    <Button
+        android:id="@+id/btn_add3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btn_agregar"
+        app:layout_constraintTop_toBottomOf="@id/imgPlato3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
