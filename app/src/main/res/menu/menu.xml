@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/inicio"
+        android:id="@+id/apps"
         android:icon="@drawable/baseline_home_24"
-        android:title="Inicio" />
+        android:title="Apps" />
 
     <item
         android:id="@+id/noticias"

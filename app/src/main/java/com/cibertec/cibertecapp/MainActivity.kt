@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.cibertec.cibertecapp.cursos.CursosActivity
 import com.cibertec.cibertecapp.news.NoticiasActivity
+import com.cibertec.cibertecapp.playstore.AppActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -25,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         var menu_bar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         menu_bar.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.inicio -> {
-                    startActivity(Intent(this, LoginActivity::class.java))
+                R.id.apps -> {
+                    fragment(AppActivity())
                 }
                 R.id.cursos -> {
                     fragment(CursosActivity())

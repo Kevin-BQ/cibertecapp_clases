@@ -19,14 +19,15 @@ class WeatherActivity : AppCompatActivity() {
             Clima("Lima", "25°C", R.drawable.baseline_cloud_24),
             InfoExtra(R.drawable.baseline_cloud_24, "Lluvia moderada por la tarde"),
             InfoExtra(R.drawable.baseline_cloud_24, "Vientos fríos"),
-            //Clima("Cusco", "15°C", R.drawable.baseline_cloud_24),
+            Clima("Cusco", "15°C", R.drawable.baseline_cloud_24),
             InfoExtra(R.drawable.baseline_cloud_24, "Lluvia moderada por la tarde"),
             InfoExtra(R.drawable.baseline_cloud_24, "Vientos fríos"),
+            Clima("Arequipa", "20°C", R.drawable.baseline_cloud_24),
             InfoExtra(R.drawable.baseline_cloud_24, "Viento fuerte"),
             InfoExtra(R.drawable.baseline_cloud_24, "Viento fuerte"),
+            Clima("Ica", "18°C", R.drawable.baseline_cloud_24),
             InfoExtra(R.drawable.baseline_cloud_24, "Viento fuerte", )
         )
-
         recycler.adapter = MixedWeatherAdapter(items)
     }
 }
