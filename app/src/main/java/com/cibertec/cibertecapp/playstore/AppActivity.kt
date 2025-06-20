@@ -13,8 +13,6 @@ class AppActivity: Fragment(R.layout.play_store) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerPlayStore)
         val recyclerView2 = view.findViewById<RecyclerView>(R.id.recyclerSugerencias)
         val recyclerView3 = view.findViewById<RecyclerView>(R.id.recyclerOtrasApps)

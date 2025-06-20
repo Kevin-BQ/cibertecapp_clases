@@ -1,19 +1,17 @@
 package com.cibertec.cibertecapp.weather
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.cibertec.cibertecapp.R
 
-class WeatherActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
+class ClimaActivity: Fragment(R.layout.weather_activity) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.weather_activity)
 
-        val recycler = findViewById<RecyclerView>(R.id.recyclerWeather)
-        recycler.layoutManager = LinearLayoutManager(this)
+        val recycler = view.findViewById<RecyclerView>(R.id.recyclerWeather)
 
         val items: List<WeatherListItem> = listOf(
             Clima("Lima", "25°C", R.drawable.baseline_cloud_24),
@@ -29,5 +27,7 @@ class WeatherActivity : AppCompatActivity() {
             InfoExtra(R.drawable.baseline_cloud_24, "Viento fuerte", )
         )
         recycler.adapter = MixedWeatherAdapter(items)
+
+        recycler.layoutManager = LinearLayoutManager(requireContext())
     }
 }

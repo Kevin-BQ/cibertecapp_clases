@@ -16,4 +16,9 @@
         android:id="@+id/cursos"
         android:icon="@drawable/baseline_book_24"
         android:title="Cursos" />
+
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/baseline_cloud_24"
+        android:title="Weather" />
 </menu>

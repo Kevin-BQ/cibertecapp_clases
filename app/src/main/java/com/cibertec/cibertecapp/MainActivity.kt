@@ -7,10 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.cibertec.cibertecapp.NBA.NbaActivity
 import com.cibertec.cibertecapp.cursos.CursosActivity
 import com.cibertec.cibertecapp.news.NoticiasActivity
 import com.cibertec.cibertecapp.playstore.AppActivity
+import com.cibertec.cibertecapp.weather.Clima
+import com.cibertec.cibertecapp.weather.ClimaActivity
+import com.cibertec.cibertecapp.weather.InfoExtra
+import com.cibertec.cibertecapp.weather.MixedWeatherAdapter
+import com.cibertec.cibertecapp.weather.WeatherListItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
 
         var menu_bar = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
@@ -35,6 +43,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.nba -> {
                     fragment(NbaActivity())
+                }
+                R.id.weather -> {
+                    fragment(ClimaActivity())
                 }
             }
             true
